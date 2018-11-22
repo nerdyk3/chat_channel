@@ -4,6 +4,7 @@ from .views import index,room
  
 urlpatterns = [
     path('',index,name='index'),
-    path('(?P<room_name>[^/]+)/',room,name='room'),
+    path('<room_name>/',room,name='room'),
 
 ]
+   
